@@ -1,0 +1,85 @@
+*{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: white;
+}
+/* SFONDO */
+body{
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+/* regole del containr generale */
+.container{
+  width: 80%;
+  height: 1000px;
+  margin:auto;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5%;
+  padding: 50px;
+}
+/* Centrare qualsiasi logo che viene messo, con quel ratio */
+.logo{
+  width: 420px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* regole dell header */
+header{
+  align-items: center;
+  text-align:  center;
+}
+/* Specifico gli h1 che stanno all interno, no quelli fuori */
+header>h1 {
+  color: rgba(0, 233, 0, 1);
+}
+
+nav {
+  background-color: rgba(0, 233, 0, 1);
+  padding: 10px;
+}
+
+nav>input{
+  color: black;
+  }
+
+section{
+    width: 50%;
+  }
+
+section>h2{
+  display: inline-block;
+}
+/* uso before e after per staccarlo da quello che gli vogliamo scrivere nello span */
+.spansection:before{
+  content: "↦ ";
+}
+.spansection:after{
+  content: " - ";
+}
+.spanh:after{
+  content: "Stato carica";
+}
+/* Classe generale */
+.carica {
+  height: 50px;
+  background-color: rgba(0, 233, 0, 1);
+  border-radius: 15%;
+}
+/* Classe più un altra condizione */
+.carica.arancione{
+  width: 50%;
+  background-color: orange;
+}
+
+.carica.verde{
+  width: 100%;
+  background-color: rgba(0, 233, 0, 1);
+
+}
+
+.carica.rosso{
+  width: 10%;
+  background-color: red;
+
+}
